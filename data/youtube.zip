@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trending YouTube Video Statistics and Comments | Kaggle</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    <meta name="theme-color" content="#008ABC" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" /><link rel="dns-prefetch" href="https://stats.g.doubleclick.net" /><link rel="dns-prefetch" href="https://js.intercomcdn.com" /><link rel="preload" href="https://az416426.vo.msecnd.net/scripts/a/ai.0.js" as=script /><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as=script /><link rel="dns-prefetch" href="https://kaggle2.blob.core.windows.net" />
+    <link href="/content/v/d420a040e581/kaggle/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="manifest" href="/static/json/manifest.json">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic" rel='stylesheet' type='text/css'>
+                <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=35d31f6ac881"/>
+        <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=50e63e9051de"/>
+        <script>
+            
+            (function () {
+                var originalError = window.onerror;
+
+                window.onerror = function (message, url, lineNumber, columnNumber, error) {
+                    var handled = originalError && originalError(message, url, lineNumber, columnNumber, error);
+                    var blockedByCors = message && message.toLowerCase().indexOf("script error") >= 0;
+                    return handled || blockedByCors;
+                };
+            })();
+        </script>
+    <script>
+        var appInsights=window.appInsights||function(config){
+        function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey:"5b3d6014-f021-4304-8366-3cf961d5b90f",
+            disableAjaxTracking: true
+        });
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+    
+    
+    
+ 
+    
+    <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-12629138-1', 'auto');
+    ga('set', 'displayFeaturesTask', null);
+    ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '136809193586742'); 
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=136809193586742&ev=PageView&noscript=1"/>
+</noscript>
+
+    
+
+    <script>
+          window.intercomSettings = {
+            app_id: "koj6gxx6"
+          };
+    </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/koj6gxx6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets"/>
+    <meta name="og:url" content="https://www.kaggle.com/datasnaek/youtube" />
+    <meta name="og:title" content="Trending YouTube Video Statistics and Comments" />
+    <meta name="og:description" content="Daily statistics (views, likes, category, comments+) for trending YouTube videos" />
+    <meta name="og:image" content="https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-card.png" />
+
+
+    <script src="/static/assets/manifest.js?v=47a28ec84654"></script>
+<script src="/static/assets/vendor.js?v=232ae81f603a"></script>
+</head>
+<body>
+    
+
+
+
+
+
+<div class="site-layout">
+        <div class="site-layout__header">
+            <div data-component-name="SiteHeaderContainer"></div><script>var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({});performance && performance.mark && performance.mark("SiteHeaderContainer.componentCouldBootstrap");</script>
+        </div>
+
+    <div class="site-layout__main-content">
+        
+
+<div data-component-name="DatasetContainer"></div><script>var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"datasetId":2518,"overview":"Daily statistics (views, likes, category, comments+) for trending YouTube videos","description":"## Plan ##\nData collected from the (up to) 200 listed trending YouTube videos every day in the US and the UK.\n\n## Description ##\n\nThe dataset includes data gathered from videos on YouTube that are contained within the trending category each day.\n\nThere are two kinds of data files, one includes comments and one includes video statistics. They are linked by the unique video_id field.\n\n\n\nThe headers in the video file are:\n\n - video_id (Common id field to both comment and video csv files)\n - title\n - channel_title\n - category_id (Can be looked up using the included JSON files, but varies per region so use the appropriate JSON file for the CSV file\u0027s country)\n - tags (Separated by | character, [none] is displayed if there are no tags)\n - views\n - likes\n - dislikes\n - thumbnail_link\n - date (Formatted like so: [day].[month])\n\n\n\nThe headers in the comments file are:\n\n - video_id (Common id field to both comment and video csv files)\n - comment_text\n - likes\n - replies\n\nExtra info: The YouTube API is not effective at formatting comments by relevance, although it claims to do so. As a result, the most relevant comments do not align with the top comments at all, they aren\u0027t even sorted by likes or replies.\n\n## Inspiration ##\nPossible uses for this dataset could include:\n\n - Sentiment analysis in a variety of forms\n - Categorising YouTube videos based on their comments and statistics.\n - Training ML algorithms to generate their own YouTube comments.\n - Analysing what factors affect how popular a YouTube video will be.\n\nAlthough there are many likely many more possibilities, including analysis of changes over time etc.","isRemoved":false,"isVersionRemoved":false,"isFeatured":true,"scheduledToBeFeatured":null,"privateGroupId":null,"datasetVersionId":4915,"datasetVersionNumber":19,"lastVersionNumber":19,"datasetUrl":"/datasnaek/youtube","datasetExternalUrl":"https://www.kaggle.com/datasnaek/youtube","originalImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/data-original.png","coverImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-cover.png","cardImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-card.png","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","license":"CC0: Public Domain \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","voteCount":24,"upVoteUrl":"/datasnaek/youtube/vote","creatorUserId":1236717,"creatorDisplayName":"Mitchell J","ownerTwitter":null,"lastUpdated":"2017-10-11T21:31:06.187Z","downloadUrl":"/datasnaek/youtube/downloads/youtube.zip","downloadSize":43764385,"newNotebookUrl":"/Scripts/NewNotebook?datasetVersionId=4915","newScriptUrl":"/Scripts/NewScript?datasetVersionId=4915","hasAlreadyVotedUp":false,"isOldDatasetVersion":false,"numberOfViews":8486,"numberOfDownloads":933,"numberOfScripts":0,"numberOfTopics":1,"privateGroupMemberCount":0,"canEdit":false,"canEditSlug":false,"canEditPublishStatus":false,"canEditFeatureStatus":false,"canEditPrivateGroup":false,"canEditDescription":false,"hideVersionStatuses":true,"cardImageLeft":0,"cardImageTop":125,"cardImageWidth":623,"cardImageHeight":623,"coverImageLeft":0,"coverImageTop":231,"coverImageWidth":1896,"coverImageHeight":399,"datasetVersions":[{"id":4915,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-11T21:31:06.187Z","versionNumber":19,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/19","status":"ready","isRemoved":false},{"id":4847,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-09T17:52:39.617Z","versionNumber":18,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/18","status":"ready","isRemoved":false},{"id":4796,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-07T15:58:06.04Z","versionNumber":17,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/17","status":"ready","isRemoved":false},{"id":4721,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-05T16:23:48.703Z","versionNumber":16,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/16","status":"ready","isRemoved":false},{"id":4635,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-03T15:56:22.513Z","versionNumber":15,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/15","status":"ready","isRemoved":false},{"id":4596,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-10-02T00:15:05.04Z","versionNumber":14,"versionNotes":"Added 3 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/14","status":"ready","isRemoved":false},{"id":4520,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-28T16:28:56.383Z","versionNumber":13,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/13","status":"ready","isRemoved":false},{"id":4455,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-26T17:13:37.097Z","versionNumber":12,"versionNotes":"Added 2 new days of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/12","status":"ready","isRemoved":false},{"id":4427,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-24T21:37:58.37Z","versionNumber":11,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/11","status":"ready","isRemoved":false},{"id":4413,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-24T03:29:14.83Z","versionNumber":10,"versionNotes":"Removed some duplicates on USvideos.csv","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/10","status":"ready","isRemoved":false},{"id":4402,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-23T15:24:43.493Z","versionNumber":9,"versionNotes":"Removed rogue data rows","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/9","status":"ready","isRemoved":false},{"id":4383,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-22T15:30:48.663Z","versionNumber":8,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/8","status":"ready","isRemoved":false},{"id":4353,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-21T00:45:40.85Z","versionNumber":7,"versionNotes":"Reformatted whole dataset to make it easier to work with.","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/7","status":"ready","isRemoved":false},{"id":4347,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-20T19:09:53.07Z","versionNumber":6,"versionNotes":"Added another day of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/6","status":"ready","isRemoved":false},{"id":4326,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-19T17:56:37.073Z","versionNumber":5,"versionNotes":"Added 2 new days worth of data.","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/5","status":"ready","isRemoved":false},{"id":4265,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-17T23:05:50.913Z","versionNumber":4,"versionNotes":"Added 2 new days worth of data","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/4","status":"ready","isRemoved":false},{"id":4223,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-16T00:53:35Z","versionNumber":3,"versionNotes":"Updated category_id file","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/3","status":"ready","isRemoved":false},{"id":4210,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-15T19:57:36.507Z","versionNumber":2,"versionNotes":"Added category_id JSON files","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/2","status":"ready","isRemoved":false},{"id":4206,"slug":"youtube","name":"Trending YouTube Video Statistics and Comments","creationDate":"2017-09-15T19:25:18.487Z","versionNumber":1,"versionNotes":"Initial release","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/2518/4206/61ea143988e2f7db2ee9377cfdb6ffca/dataset-thumbnail.png","datasetVersionUrl":"/datasnaek/youtube/version/1","status":"ready","isRemoved":false}],"scripts":[{"name":"YouTube trends EDA","url":"/ievgenvp/youtube-trends-eda","lastRunDate":"2017-10-12T14:59:41.573Z","totalVotes":13},{"name":"Sentimental analysis and detailed EDA.","url":"/kanav0183/sentimental-analysis-and-detailed-eda","lastRunDate":"2017-10-05T17:28:32.457Z","totalVotes":12},{"name":"sentiment analysis","url":"/lohitharcot/sentiment-analysis","lastRunDate":"2017-10-02T12:19:46.977Z","totalVotes":7}],"discussions":[{"title":"Dataset Discussion","url":"/forums/f/6638/trending-youtube-video-statistics-and-comments/t/39778/dataset-discussion","lastPost":"2017-10-03T19:09:32.1Z","totalReplies":14}],"contributors":[{"userId":648298,"totalScriptVotes":13,"totalScripts":1,"totalForumMessages":5,"totalForumMessageVotes":1,"totalScore":20.0,"displayName":"ievgen","performanceTier":"Contributor","userUrl":"/ievgenvp","rank":"1st","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/648298-kg.jpg"},{"userId":868700,"totalScriptVotes":12,"totalScripts":1,"totalForumMessages":0,"totalForumMessageVotes":0,"totalScore":13.0,"displayName":"kanavanand","performanceTier":"Expert","userUrl":"/kanav0183","rank":"2nd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/868700-gp.jpg"},{"userId":1236717,"totalScriptVotes":0,"totalScripts":0,"totalForumMessages":6,"totalForumMessageVotes":3,"totalScore":9.0,"displayName":"Mitchell J","performanceTier":"Novice","userUrl":"/datasnaek","rank":"3rd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png"}],"pageMessages":[],"feed":[{"activityType":"scriptRun","url":"/ievgenvp/youtube-trends-eda","userName":"ievgenvp","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/648298-kg.jpg","date":"2017-10-12T14:59:40.87Z","userDisplayName":"ievgen","title":"YouTube trends EDA","versionNumber":39,"userUrl":"/ievgenvp"},{"activityType":"datasetVersion","url":"/datasnaek/youtube/version/19","userName":"datasnaek","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png","date":"2017-10-11T21:31:06.187Z","userDisplayName":"Mitchell J","title":"Added 2 new days worth of data","versionNumber":19,"userUrl":"/datasnaek"},{"activityType":"datasetVersion","url":"/datasnaek/youtube/version/18","userName":"datasnaek","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png","date":"2017-10-09T17:52:39.617Z","userDisplayName":"Mitchell J","title":"Added 2 new days worth of data","versionNumber":18,"userUrl":"/datasnaek"},{"activityType":"datasetVersion","url":"/datasnaek/youtube/version/17","userName":"datasnaek","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png","date":"2017-10-07T15:58:06.04Z","userDisplayName":"Mitchell J","title":"Added 2 new days worth of data","versionNumber":17,"userUrl":"/datasnaek"},{"activityType":"scriptRun","url":"/kanav0183/sentimental-analysis-and-detailed-eda","userName":"kanav0183","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/868700-gp.jpg","date":"2017-10-05T17:28:30.67Z","userDisplayName":"kanavanand","title":"Sentimental analysis and detailed EDA.","versionNumber":2,"userUrl":"/kanav0183"}],"privateGroups":[{"id":0,"name":"Publicly Accessible"}],"discussion":{"canDownvote":false,"dataUrl":"/forums/6638/topics.json","id":6638,"isRootLevel":false,"isSubscribed":false,"initialTopics":null,"paramValues":{"category":"all","kind":"all","page":1,"search":null,"group":"all","sortBy":"hot"}},"currentTab":"home","topicId":null,"isNewTopic":false,"newTopic":{"allowAttachments":false,"authorRanking":null,"authorTier":"novice","authorType":"topic","forumId":6638,"parentName":"Trending YouTube Video Statistics and Comments","parentUrl":"/datasnaek/youtube"},"canSeeCategories":true,"categories":{"categories":[{"id":11208,"name":"linguistics","fullPath":"society and social sciences \u003e social sciences \u003e linguistics","listingUrl":"/datasets?sortBy=relevance\u0026group=all\u0026search=tag%3A%27linguistics%27","description":null,"isInherited":false,"datasetCount":167,"competitionCount":5,"scriptCount":29,"totalCount":201},{"id":12116,"name":"internet","fullPath":"technology and applied sciences \u003e computing \u003e internet","listingUrl":"/datasets?sortBy=relevance\u0026group=all\u0026search=tag%3A%27internet%27","description":null,"isInherited":false,"datasetCount":129,"competitionCount":13,"scriptCount":3,"totalCount":145},{"id":2107,"name":"languages","fullPath":"culture and arts \u003e culture and humanities \u003e languages","listingUrl":"/datasets?sortBy=relevance\u0026group=all\u0026search=tag%3A%27languages%27","description":null,"isInherited":false,"datasetCount":76,"competitionCount":2,"scriptCount":7,"totalCount":85},{"id":2112,"name":"popular culture","fullPath":"culture and arts \u003e culture and humanities \u003e popular culture","listingUrl":"/datasets?sortBy=relevance\u0026group=all\u0026search=tag%3A%27popular culture%27","description":null,"isInherited":false,"datasetCount":25,"competitionCount":0,"scriptCount":2,"totalCount":27},{"id":6600,"name":"statistics","fullPath":"mathematics and logic \u003e statistics","listingUrl":"/datasets?sortBy=relevance\u0026group=all\u0026search=tag%3A%27statistics%27","description":null,"isInherited":false,"datasetCount":5,"competitionCount":0,"scriptCount":6,"totalCount":11},{"id":null,"name":"medium","fullPath":null,"listingUrl":null,"description":"Dataset size: medium (10MB to 1GB)","isInherited":true,"datasetCount":0,"competitionCount":0,"scriptCount":0,"totalCount":0},{"id":null,"name":"featured","fullPath":null,"listingUrl":null,"description":"This dataset has been featured by the Kaggle team","isInherited":true,"datasetCount":0,"competitionCount":0,"scriptCount":0,"totalCount":0}],"type":"dataset"},"licenseGroups":[{"id":1,"name":"Creative Commons","licenses":[{"id":1,"description":"CC0: Public Domain \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":1},{"id":3,"description":"CC BY-NC-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":2},{"id":8,"description":"CC BY-SA 4.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":3},{"id":10,"description":"CC BY-SA 3.0 \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/3.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":4}],"displaySequence":1},{"id":2,"name":"GPL","licenses":[{"id":9,"description":"GPL 2 \u003ca href=\u0022http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":1}],"displaySequence":2},{"id":3,"name":"Open Database","licenses":[{"id":5,"description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: Database Contents \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":1},{"id":6,"description":"Database: Open Database \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e, Contents: ? Original Authors","displaySequence":2}],"displaySequence":3},{"id":4,"name":"Special Cases","licenses":[{"id":7,"description":"World Bank Dataset Terms of Use \u003ca href=\u0022http://web.worldbank.org/WBSITE/EXTERNAL/0,,contentMDK:22547097~pagePK:50016803~piPK:50016805~theSitePK:13,00.html\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":1},{"id":2,"description":"Reddit API Terms \u003ca href=\u0022https://www.reddit.com/wiki/api\u0022 target=\u0022_blank\u0022\u003e\u003cspan class=\u0022fa fa-info-circle\u0022/\u003e\u003c/a\u003e","displaySequence":2}],"displaySequence":4},{"id":5,"name":"Other","licenses":[{"id":11,"description":"Data files ? Original Authors","displaySequence":1},{"id":12,"description":"Other (specified in description)","displaySequence":2},{"id":4,"description":"Unknown","displaySequence":3}],"displaySequence":5}],"owners":[{"id":0,"imageUrl":"/image-fetch/0","isOrganization":false,"name":null,"profileUrl":"/","slug":null,"maxFileSizeBytes":null},{"id":1236717,"imageUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png","isOrganization":false,"name":"Mitchell J","profileUrl":"/datasnaek","slug":"datasnaek","maxFileSizeBytes":524288000}],"maxCompressedFileBytesAllowed":524288000,"maxUncompressedFileBytesAllowed":524288000,"maxTopLevelFilesAllowed":20,"canSeeDatasetWorker":false,"title":"Trending YouTube Video Statistics and Comments","slug":"youtube","licenseId":1,"data":{"id":4915,"datasetId":2518,"versionNumber":19,"zipBlobFileId":341556,"totalSize":113333662,"name":null,"description":null,"type":"datasetVersion","children":[{"id":14310,"blobFileId":341554,"url":"/datasnaek/youtube/downloads/GB_category_id.json","fileType":".json","downloadUrl":"/datasnaek/youtube/downloads/GB_category_id.json","relativePath":"../input/GB_category_id.json","creationDate":"2017-10-11T21:31:05.5180238Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":8225,"fullPath":null,"name":"GB_category_id.json","description":"","type":"datasetVersionFile","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}},{"id":14306,"blobFileId":341550,"url":"/datasnaek/youtube/downloads/GBcomments.csv","fileType":".csv","downloadUrl":"/datasnaek/youtube/downloads/GBcomments.csv","relativePath":"../input/GBcomments.csv","creationDate":"2017-10-11T21:30:54Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":21431275,"fullPath":null,"name":"GBcomments.csv","description":"","type":"datasetVersionFile","children":[{"columns":[{"name":"video_id","description":null,"order":0,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"comment_text","description":null,"order":1,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"likes","description":null,"order":2,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"replies","description":null,"order":3,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null}],"totalRows":null,"name":null,"description":null,"type":"genericTable","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}}],"info":{"metrics":null},"settings":{"csvSettings":null}},{"id":14307,"blobFileId":341551,"url":"/datasnaek/youtube/downloads/GBvideos.csv","fileType":".csv","downloadUrl":"/datasnaek/youtube/downloads/GBvideos.csv","relativePath":"../input/GBvideos.csv","creationDate":"2017-10-11T21:29:27Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":973021,"fullPath":null,"name":"GBvideos.csv","description":"","type":"datasetVersionFile","children":[{"columns":[{"name":"video_id","description":null,"order":0,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"title","description":null,"order":1,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"channel_title","description":null,"order":2,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"category_id","description":null,"order":3,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"tags","description":null,"order":4,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"views","description":null,"order":5,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"likes","description":null,"order":6,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"dislikes","description":null,"order":7,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"comment_total","description":null,"order":8,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"thumbnail_link","description":null,"order":9,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"date","description":null,"order":10,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null}],"totalRows":null,"name":null,"description":null,"type":"genericTable","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}}],"info":{"metrics":null},"settings":{"csvSettings":null}},{"id":14311,"blobFileId":341555,"url":"/datasnaek/youtube/downloads/US_category_id.json","fileType":".json","downloadUrl":"/datasnaek/youtube/downloads/US_category_id.json","relativePath":"../input/US_category_id.json","creationDate":"2017-10-11T21:31:05.5180238Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":8496,"fullPath":null,"name":"US_category_id.json","description":"","type":"datasetVersionFile","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}},{"id":14308,"blobFileId":341552,"url":"/datasnaek/youtube/downloads/UScomments.csv","fileType":".csv","downloadUrl":"/datasnaek/youtube/downloads/UScomments.csv","relativePath":"../input/UScomments.csv","creationDate":"2017-10-11T21:30:53Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":20413391,"fullPath":null,"name":"UScomments.csv","description":"","type":"datasetVersionFile","children":[{"columns":[{"name":"video_id","description":null,"order":0,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"comment_text","description":null,"order":1,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"likes","description":null,"order":2,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"replies","description":null,"order":3,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null}],"totalRows":null,"name":null,"description":null,"type":"genericTable","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}}],"info":{"metrics":null},"settings":{"csvSettings":null}},{"id":14309,"blobFileId":341553,"url":"/datasnaek/youtube/downloads/USvideos.csv","fileType":".csv","downloadUrl":"/datasnaek/youtube/downloads/USvideos.csv","relativePath":"../input/USvideos.csv","creationDate":"2017-10-11T21:29:27Z","ownerSlug":"datasnaek","datasetSlug":"youtube","datasetVersionNumber":19,"size":943551,"fullPath":null,"name":"USvideos.csv","description":"","type":"datasetVersionFile","children":[{"columns":[{"name":"video_id","description":null,"order":0,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"title","description":null,"order":1,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"channel_title","description":null,"order":2,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"category_id","description":null,"order":3,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"tags","description":null,"order":4,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"views","description":null,"order":5,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"likes","description":null,"order":6,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"dislikes","description":null,"order":7,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"comment_total","description":null,"order":8,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"thumbnail_link","description":null,"order":9,"originalType":"","type":"string","isNullable":false,"isPrimaryKey":false,"info":null},{"name":"date","description":null,"order":10,"originalType":"","type":"numeric","isNullable":false,"isPrimaryKey":false,"info":null}],"totalRows":null,"name":null,"description":null,"type":"genericTable","children":[],"info":{"metrics":null},"settings":{"csvSettings":null}}],"info":{"metrics":null},"settings":{"csvSettings":null}}],"info":{"metrics":null},"settings":{"csvSettings":null}},"isPublished":true,"owner":{"id":1236717,"imageUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/1236717-kg.png","isOrganization":false,"name":"Mitchell J","profileUrl":"/datasnaek","slug":"datasnaek","maxFileSizeBytes":524288000}});performance && performance.mark && performance.mark("DatasetContainer.componentCouldBootstrap");</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            preferredFont: "TeX",
+            availableFonts: ["STIX", "TeX"],
+            linebreaks: {
+                automatic: true
+            },
+            EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+        },
+        tex2jax: {
+            inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+            displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+            processEscapes: true,
+            ignoreClass: "tex2jax_ignore|dno"
+        },
+        TeX: {
+            noUndefined: {
+                attributes: {
+                    mathcolor: "red",
+                    mathbackground: "#FFEEEE",
+                    mathsize: "90%"
+                }
+            }
+        },
+        Macros: {
+            href: "{}"
+        },
+        skipStartupTypeset: true,
+        messageStyle: "none"
+    });
+</script>
+
+<script type="text/javascript" async crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+    </div>
+
+        <div class="site-layout__footer">
+            <footer class="site-footer">
+    <div class="site-footer__content">
+        <div class="site-footer__copyright">
+            <span>&copy; 2017 Kaggle Inc</span>
+        </div>
+        <nav class="site-footer__nav">
+            <a href="/team">Our Team</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/contact">Contact/Support</a>
+        </nav>
+        <nav class="site-footer__social">
+            <div data-component-name="SocialIcons"></div><script>var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push();performance && performance.mark && performance.mark("SocialIcons.componentCouldBootstrap");</script>
+        </nav>
+    </div>
+</footer>
+
+        </div>
+</div>
+
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+
+    Kaggle.Current = {
+        hasJupyterNotebookEditor: true,
+        hasEnvironmentVariables: false,
+        hasInteractiveScripts: false,
+        hasStandaloneKernelProxy: false,
+        antiForgeryToken: 'sa8-UTBkXljXhEvK43Bk26xUsT7xohWj7stXi3DNChI39rNT8-D4MoI5zIUpNTdzuJqv4e_3_U_-PIwQhhkBZGk9TwE1',
+        isAnonymous: true,
+        isFullScreen: false,
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+    Kaggle.PageMessages = [{"id":null,"type":"info","message":null,"dangerousHtmlMessage":"Please \u003ca href=\u0022/account/login?returnUrl=%2Fdatasnaek%2Fyoutube\u0022\u003elogin\u003c/a\u003e to download this dataset.","isPersistent":true,"faIcon":null}];
+</script>
+
+
+<script src="/content/v/5dbea6ee9ce1/shared/js/kaggle.prism.min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 955616553;
+    w.google_conversion_label = "-SL0CM3tqXMQqZrWxwM";
+    w.google_conversion_value = 0.00;
+    w.google_conversion_currency = "USD";
+    w.google_remarketing_only = false;
+    w.google_conversion_language = "en";
+    w.google_conversion_format = "3";
+    w.google_conversion_color = "ffffff";
+}
+// DO NOT CHANGE THE CODE BELOW.
+goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+    }
+    var conv_handler = window['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+    }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
+
+
+
+
+    <script src="/static/assets/app.js?v=5c7c1434a285"></script>
+    
+        <script>
+            (function() {
+                if ('serviceWorker' in navigator) {
+                    
+                    navigator.serviceWorker.register("/static/assets/service-worker.js").then(function(reg) {
+                        
+                        reg.onupdatefound = function() {
+                            
+                            var installingWorker = reg.installing;
+                            installingWorker.onstatechange = function() {
+                                switch (installingWorker.state) {
+                                case 'installed':
+                                    if (navigator.serviceWorker.controller) {
+                                        
+                                        console.log('New or updated content is available.');
+                                    } else {
+                                        
+                                        console.log('Content is now available offline!');
+                                    }
+                                    break;
+                                case 'redundant':
+                                    console.error('The installing service worker became redundant.');
+                                    break;
+                                }
+                            };
+                        };
+                    }).catch(function(e) {
+                      console.error('Error during service worker registration:', e);
+                    });
+                }
+            })();
+        </script>
+</body>
+</html>
